@@ -1,0 +1,130 @@
+# Macro for Unity YAML files
+[attr]unity text eol=lf diff merge
+
+# Auto-normalize line endings by default
+* text=auto
+
+# C# code
+*.cs text diff=csharp
+
+# Unity Text Assets
+*.meta unity
+*.unity unity
+*.asset unity
+*.prefab unity
+*.mat unity
+*.anim unity
+*.controller unity
+*.overrideController unity
+*.physicMaterial unity
+*.physicsMaterial2D unity
+*.playable unity
+*.mask unity
+*.brush unity
+*.flare unity
+*.fontsettings unity
+*.guiskin unity
+*.giparams unity
+*.renderTexture unity
+*.spriteatlas unity
+*.terrainlayer unity
+*.mixer unity
+*.shadervariants unity
+*.preset unity
+*.asmdef unity
+
+# Unity Binary Assets
+*.cubemap binary
+*.unitypackage binary
+# Note: Unity terrain assets must have "-Terrain" suffix.
+*-[Tt]errain.asset -unity binary
+# Note: Unity navmesh assets must have "-NavMesh" suffix.
+*-[Nn]av[Mm]esh.asset -unity binary
+
+# Image
+*.jpg binary
+*.jpeg binary
+*.png binary
+*.apng binary
+*.atsc binary
+*.gif binary
+*.bmp binary
+*.exr binary
+*.tga binary
+*.tiff binary
+*.tif binary
+*.iff binary
+*.pict binary
+*.dds binary
+*.xcf binary
+*.leo binary
+*.kra binary
+*.kpp binary
+*.clip binary
+*.webm binary
+*.webp binary
+*.svg binary
+*.svgz binary
+*.psd binary
+*.afphoto binary
+*.afdesign binary
+
+# Audio
+*.mp3 binary
+*.ogg binary
+*.wav binary
+*.aiff binary
+*.aif binary
+*.mod binary
+*.it binary
+*.s3m binary
+*.xm binary
+
+# Video
+*.mov binary
+*.avi binary
+*.asf binary
+*.mpg binary
+*.mpeg binary
+*.mp4 binary
+*.flv binary
+*.ogv binary
+*.wmv binary
+
+# 3D
+*.fbx binary
+*.obj binary
+*.mtl binary
+*.max binary
+*.blend binary
+*.blender binary
+*.dae binary
+*.mb binary
+*.ma binary
+*.3ds binary
+*.dfx binary
+*.c4d binary
+*.lwo binary
+*.lwo2 binary
+*.abc binary
+*.3dm binary
+*.bin binary
+*.glb binary
+
+# Fonts
+*.otf binary
+*.ttf binary
+
+# Executables
+*.exe binary
+*.dll binary
+*.so binary
+*.pdb binary
+*.mdb binary
+
+# Packaging
+*.zip binary
+*.7z binary
+*.gz binary
+*.rar binary
+*.tar binary

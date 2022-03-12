@@ -4,6 +4,7 @@
 
 using System;
 using UnityEngine;
+using UnityEngine.UI;
 
 [DisallowMultipleComponent]
 [RequireComponent(typeof(CharacterController), typeof(AudioSource))]
@@ -26,13 +27,23 @@ public class PlayerBehavior : MonoBehaviour
     public SoundFile landSound; // TODO implement landing detection
     public SoundFile pickUpSound;
 
+    [Header("On Screen Buttons")]
+    public Joystick leftJoyStick;
+    public Button jumpButton;
+    public Button shootButton;
+
+
     private CharacterController controller;
     private AudioSource soundPlayer;
 
-    void Awake()
+    void Start()
     {
         controller = GetComponent<CharacterController>();
         soundPlayer = GetComponent<AudioSource>();
+
+        leftJoyStick = GameObject.Find("/GameUICanvas/OnScreenControls/Left Fixed Joystick").GetComponent<Joystick>();
+
+
     }
 
     void Update()
@@ -47,8 +58,11 @@ public class PlayerBehavior : MonoBehaviour
             velocity.y = -2.0f;
         }
 
-        float x = GetInputAxis(InputManager.Instance.right, InputManager.Instance.left);
-        float z = GetInputAxis(InputManager.Instance.forward, InputManager.Instance.backward);
+        //float x = GetInputAxis(InputManager.Instance.right, InputManager.Instance.left);
+        //float z = GetInputAxis(InputManager.Instance.forward, InputManager.Instance.backward);
+
+        float x = leftJoyStick.Horizontal;
+        float z = leftJoyStick.Vertical;
 
         Vector3 move = transform.right * x + transform.forward * z;
         controller.Move(move * maxSpeed * Time.deltaTime);

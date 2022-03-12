@@ -54760,9 +54760,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2117108137, guid: 96556d26792cb7c408d9759805b82a71, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 551052313225403710, guid: 96556d26792cb7c408d9759805b82a71, type: 3}
       propertyPath: m_LocalPosition.z
       value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2387275620618930981, guid: 96556d26792cb7c408d9759805b82a71, type: 3}
+      propertyPath: controlSensitivity
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2387275620618930982, guid: 96556d26792cb7c408d9759805b82a71, type: 3}
       propertyPath: m_LocalPosition.z

@@ -9,6 +9,6 @@ public class CursorGrabber : MonoBehaviour
 {
     public void GrabAndLockCursor(bool shouldLock)
     {
-        Cursor.lockState = shouldLock ? CursorLockMode.Locked : CursorLockMode.None;
+       // Cursor.lockState = shouldLock ? CursorLockMode.Locked : CursorLockMode.None;
     }
 }
